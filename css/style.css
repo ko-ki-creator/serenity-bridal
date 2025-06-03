@@ -57,12 +57,20 @@ p {
     text-align: left;
 }
 
-h2 {
-    color: var(--navy);
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    text-align: center;
+.heading {
+
+    h2 {
+        color: var(--navy);
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 50px;
+        text-align: center;
+    }
 }
 
 
@@ -73,16 +81,13 @@ PC
 
 
 /* --------------------------------メインビジュアル */
-header {
-    display: none;
-}
-
 .header {
     background-image: url(/images/mv-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 776px;
+    height: 776px;
+    margin-bottom: 100px;
 }
 
 .header-wrapper {
@@ -115,6 +120,88 @@ header {
         }
     }
 }
+
+.header-inner {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.header-container {
+    position: absolute;
+    top: 20%;
+    right: 12%;
+
+}
+
+.catch-copy {
+    color: var(--navy);
+    font-size: clamp(1.875rem, 1.413rem + 1.97vw, 3.188rem);
+    font-weight: 600;
+    text-align: right;
+    line-height: 1.3em;
+    margin-bottom: 50px;
+}
+
+.sub-copy {
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.mv-btn {
+    text-align: right;
+
+    a {
+        color: var(--white);
+        font-size: 21px;
+        display: inline-block;
+        background: linear-gradient(90deg, #D5B456 0%, #B59222 100%);
+        padding: 10px 50px;
+        border: 2px solid;
+        border-image: linear-gradient(to right, #B59222, #D5B456) 1;
+        border: 1px solid var(--white);
+        border-radius: 5px;
+        transition-duration: .5s;
+        position: relative;
+
+        &::after {
+            content: url(/images/cta-arrow.png);
+            position: absolute;
+            top: 30px;
+            right: 20px;
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.btn-above {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 33px;
+        height: 26px;
+    }
+
+    p {
+        font-family: "YuMincho", sans-serif;
+        font-size: 30px;
+    }
+}
+
+.btn-under {
+    font-family: "YuMincho", sans-serif;
+    font-size: 16px;
+}
+
 
 
 /* --------------------------------SerenityBridalについて */
@@ -149,18 +236,18 @@ header {
         border: 2px solid;
         border-image: linear-gradient(to right, #B59222, #D5B456) 1;
         transition-duration: .4s;
-    }
+        position: relative;
 
-    &::after {
-        content: url(/images/about-arrow.png);
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: -15px;
-        margin-left: -35px;
-    }
+        &::after {
+            content: url(/images/about-arrow.png);
+            position: absolute;
+            top: 10px;
+            right: -35px;
+        }
 
-    &:hover {
-        opacity: 0.7;
+        &:hover {
+            opacity: 0.6;
+        }
     }
 }
 
@@ -197,7 +284,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 564px;
+    height: 564px;
 }
 
 .voice-inner {
@@ -246,6 +333,7 @@ header {
 
 /* --------------------------------ギャラリー */
 .gallery-inner {
+    padding-top: 50px;
     margin-bottom: 100px;
 
     > p {
@@ -276,6 +364,23 @@ header {
 .item7 {
     width: 50%;
 }
+
+
+/* --------------------------------ウェディングプラン */
+.plan-inner {
+    margin-bottom: 100px;
+}
+
+.plan-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.plan-content {
+    
+}
+
 
 
 
@@ -310,13 +415,70 @@ SP
         font-size: 21px;
     }
 
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+
+    /* --------------------------------メインビジュアル */
+    .header-container {
+        position: static;
+        margin-top: -30px;
+
+    }
+
+    .catch-copy {
+        margin-bottom: 20px;
+        padding-right: 15px;
+    }
+
+    .sub-copy {
+        font-size: 18px;
+        margin-bottom: 30px;
+        padding-right: 15px;
+    }
+
+    .mv-btn {
+        text-align: center;
+        width: 100%;
+
+        a {
+            font-size: 18px;
+
+            &::after {
+                top: 50px;
+            }
+        }
+    }
+
+    .btn-above {
+        margin-bottom: 5px;
+
+        img {
+            width: 22px;
+            height: 18px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    .btn-under {
+        text-align: center;
+    }
+
 
 
 
     /* --------------------------------SerenityBridalについて */
     .about-inner {
         flex-direction: column;
-        padding: 0 15px;
+        padding: 50px 15px 0;
 
         img {
             width: 100%;
@@ -325,6 +487,7 @@ SP
     }
 
     .about-container {
+        padding: 0;
 
         p {
             margin-bottom: 20px;
@@ -359,6 +522,11 @@ SP
 
 
     /* --------------------------------お客様の声 */
+    .voice {
+        height: 100%;
+    }
+
+
     .voice-inner {
         padding: 0 15px;
     }
