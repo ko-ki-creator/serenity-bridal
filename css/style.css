@@ -5,11 +5,13 @@ html {
 body {
     font-family: "YuMincho", "Hiragino Kaku Gothic Pro", sans-serif;
     color: #444;
+    background-color: #E9F0FF;
 }
 
 :root {
     --white: #fff;
-    --red: #D90000;
+    --navy: #353D8A;
+    --gold: #B59222;
 
 }
 
@@ -49,6 +51,19 @@ ul, li {
     font-style: normal;
 }
 
+p {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+h2 {
+    color: var(--navy);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
 
 
@@ -58,6 +73,226 @@ PC
 
 
 /* --------------------------------メインビジュアル */
+header {
+    display: none;
+}
+
+.header {
+    background-image: url(/images/mv-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 776px;
+}
+
+.header-wrapper {
+    position: relative;
+
+    /* メインビジュアルの画像 */
+    > img {
+        width: 840px;
+        min-height: 530px;
+        object-fit: cover;
+    }
+
+    /* ヘッダーロゴ */
+    h1 {
+        color: var(--white);
+        font-size: clamp(2.813rem, 2.482rem + 1.41vw, 3.75rem);
+        position: absolute;
+        top: 2%;
+        left: 5%;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: inline-block;
+            background-color: var(--white);
+            position: absolute;
+            bottom: 25px;
+            left: calc(50% - 50%);
+        }
+    }
+}
+
+
+/* --------------------------------SerenityBridalについて */
+.about-inner {
+    display: flex;
+    margin-bottom: 100px;
+
+    img {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+.about-container {
+    width: 100%;
+    padding: 0 50px;
+
+    p {
+        margin-bottom: 50px;
+    }
+}
+
+.about-btn {
+    text-align: center;
+
+    a {
+        color: var(--gold);
+        font-size: 21px;
+        display: inline-block;
+        background-color: var(--white);
+        padding: 15px 50px;
+        border: 2px solid;
+        border-image: linear-gradient(to right, #B59222, #D5B456) 1;
+        transition-duration: .4s;
+    }
+
+    &::after {
+        content: url(/images/about-arrow.png);
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -15px;
+        margin-left: -35px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+
+/* --------------------------------こだわりのサービス */
+.service-inner {
+    margin-bottom: 100px;
+}
+
+.service-container {
+    display: flex;
+    gap: 20px;
+}
+
+.service-content {
+    width: 33%;
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* --------------------------------お客様の声 */
+.voice {
+    background-image: url(/images/voice-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 564px;
+}
+
+.voice-inner {
+    margin-bottom: 100px;
+
+    > p {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.voice-container {
+    display: flex;
+    gap: 20px;
+}
+
+.voice-content {
+    background-color: var(--white);
+    border-radius: 10px;
+
+    p {
+        color: var(--gold);
+        font-weight: 600;
+        padding: 10px;
+    }
+}
+
+.voice-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+    h3 {
+        color: var(--gold);
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    img {
+        width: 62px;
+        min-height: 43px;
+    }
+}
+
+
+/* --------------------------------ギャラリー */
+.gallery-inner {
+    margin-bottom: 100px;
+
+    > p {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.gallery-content {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.item1 {
+    width: 67%;
+}
+
+.item2,
+.item3,
+.item4,
+.item5 {
+    width: 33%;
+}
+
+.item6,
+.item7 {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -71,5 +306,101 @@ PC
 SP
 --------------------------------------------------- */
 @media screen and (max-width: 767px) {
+    h2 {
+        font-size: 21px;
+    }
+
+
+
+
+    /* --------------------------------SerenityBridalについて */
+    .about-inner {
+        flex-direction: column;
+        padding: 0 15px;
+
+        img {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+    .about-container {
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .about-btn {
+
+        a {
+            font-size: 18px;
+        }
+    }
+
+
+    /* --------------------------------こだわりのサービス */
+    .service-inner {
+        padding: 0 15px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .service-content {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    /* --------------------------------お客様の声 */
+    .voice-inner {
+        padding: 0 15px;
+    }
+
+    .voice-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .voice-content {
+        border-radius: 20px;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            padding: 15px;
+        }
+    }
+
+    .voice-title {
+
+        img {
+            width: 62px;
+            min-height: 43px;
+        }
+    }
+
+
+    /* --------------------------------ギャラリー */
+    .gallery-inner {
+        padding: 0 15px;
+
+        > p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .gallery-content {
+        gap: 5px;
+    }
+
 
 }
