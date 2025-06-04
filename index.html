@@ -17,6 +17,11 @@
         <div class="header-wrapper">
             <img src="images/mv-img.png" alt="">
             <h1 class="italianno">SerenityBridal</h1>
+            <button class="hamburger sp" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="header-inner">
                 <div class="header-container">
                     <h2 class="catch-copy">
@@ -40,11 +45,94 @@
                 </div>
             </div>
         </div>
+
+        <!-- ナビゲーション展開 -->
+        <div class="header-nav" id="js-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">
+                        <p class="item-large yumincho">TOP</p>
+                        <p class="item small">トップ</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">
+                        <p class="item-large yumincho">ABOUT</p>
+                        <p class="item small">幸せの始まりの場所</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service">
+                        <p class="item-large yumincho">SWEVICE</p>
+                        <p class="item small">こだわりのサービス</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#voice">
+                        <p class="item-large yumincho">VOICE</p>
+                        <p class="item small">お客様の声</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery">
+                        <p class="item-large yumincho">GALLERY</p>
+                        <p class="item small">ギャラリー</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#plan">
+                        <p class="item-large yumincho">PLAN</p>
+                        <p class="item small">ウェディングプラン</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#planner">
+                        <p class="item-large yumincho">PLANNER</p>
+                        <p class="item small">あなたの夢を実現するパートナー</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#flow">
+                        <p class="item-large yumincho">FLOW</p>
+                        <p class="item small">結婚式までのステップ</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#review">
+                        <p class="item-large yumincho">REVIEW</p>
+                        <p class="item small">実際に式を挙げた方々の感想</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq">
+                        <p class="item-large yumincho">FAQ</p>
+                        <p class="item small">よくある質問</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="header-sns">
+                <a href="https://www.instagram.com">
+                    <img src="images/instagram-icon-sp.png" alt="">
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook-icon-sp.png" alt="">
+                </a>
+                <a href="https://jp.pinterest.com/">
+                    <img src="images/pinterest-icon-sp.png" alt="">
+                </a>
+            </div>
+            <div class="nav-btn">
+                <a href="#">
+                    <img src="images/mail-icon.png" alt="">
+                    <p>無料相談のお問い合わせはこちら</p>
+                </a>
+            </div>
+        </div>
     </header>
 
     <main>
         <!-- SerenityBridalについて -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="about-inner">
                     <img src="images/about-img.png" alt="">
@@ -68,7 +156,7 @@
 
 
         <!-- こだわりのサービス -->
-        <section class="service">
+        <section class="service" id="service">
             <div class="wrapper">
                 <div class="service-inner">
                     <div class="heading">
@@ -114,7 +202,7 @@
         </section>
 
         <!-- お客様の声 -->
-        <section class="voice">
+        <section class="voice" id="voice">
             <div class="wrapper">
                 <div class="voice-inner">
                     <div class="heading">
@@ -163,7 +251,7 @@
         </section>
 
         <!-- ギャラリー -->
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="wrapper">
                 <div class="gallery-inner">
                     <div class="heading">
@@ -195,7 +283,7 @@
         </section>
 
         <!-- ウェディングプラン -->
-        <section class="plan">
+        <section class="plan" id="plan">
             <div class="wrapper">
                 <div class="plan-inner">
                     <div class="heading">
@@ -242,7 +330,7 @@
         </section>
 
         <!-- プラン詳細 -->
-        <section class="plan-list">
+        <section class="plan-list" id="plan-list">
             <div class="wrapper">
                 <div class="plan-list-inner">
                     <div class="heading">
@@ -281,7 +369,7 @@
         </section>
 
         <!-- プランナー紹介 -->
-        <section class="planner">
+        <section class="planner" id="planner">
             <div class="wrapper">
                 <div class="planner-inner">
                     <div class="heading">
@@ -329,7 +417,7 @@
         </section>
 
         <!-- 結婚式までのステップ -->
-        <section class="step">
+        <section class="step" id="step">
             <div class="wrapper">
                 <div class="step-inner">
                     <div class="heading">
@@ -393,7 +481,7 @@
         </section>
 
         <!-- 喜びの声 -->
-        <section class="comment">
+        <section class="comment" id="comment">
             <div class="wrapper">
                 <div class="comment-inner">
                     <div class="heading">
@@ -435,7 +523,7 @@
         </section>
 
         <!-- よくある質問 -->
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="wrapper">
                 <div class="faq-inner">
                     <div class="heading">
