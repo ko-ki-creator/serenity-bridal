@@ -378,8 +378,463 @@ PC
 }
 
 .plan-content {
-    
+    width: 33%;
+    background-color: var(--white);
 }
+
+.premium {
+    border: 1px solid #D5B456;
+    border-radius: 10px;
+
+    h3 {
+        color: #D5B456;
+        font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+.gold {
+    width: 100%;
+    height: 20px;
+    background-color: #D5B456;
+    border-radius: 5px 5px 0 0;
+}
+
+.head-name {
+    font-size: 21px;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 0.05em;
+}
+
+.plan-price {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    span {
+        font-size: 60px;
+        letter-spacing: 0.03em;
+    }
+}
+
+.plan-name {
+    margin-bottom: 20px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.garden {
+    border: 1px solid #353D8A;
+    border-radius: 10px;
+    position: relative;
+
+    .recommend {
+        color: var(--white);
+        font-size: 21px;
+        background-color: var(--navy);
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: fit-content;
+        margin: 0 auto;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    }
+
+    h3 {
+        color: #353D8A;
+        font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+.navy {
+    width: 100%;
+    height: 20px;
+    background-color: #353D8A;
+    border-radius: 5px 5px 0 0;
+}
+
+.simple {
+    border: 1px solid #9D9FB2;
+    border-radius: 10px;
+
+    h3 {
+        font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+.gray {
+    width: 100%;
+    height: 20px;
+    background-color: #9D9FB2;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* --------------------------------プラン詳細 */
+.plan-list-inner {
+    margin-bottom: 100px;
+}
+
+table {
+    width: 100%;
+    max-width: 508px;
+    margin: 0 auto;
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    border-spacing: 0 10px;
+
+    tr {
+        background-color: var(--navy);
+
+        th {
+            color: var(--white);
+            padding: 10px 50px;
+        }
+
+        td {
+            background-color: var(--white);
+            padding-left: 20px;
+        }
+    }
+}
+
+
+
+/* --------------------------------プランナー紹介 */
+.planner-inner {
+    margin-bottom: 100px;
+}
+
+.planner-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.planner-content {
+
+    img {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.planner-group {
+    background-color: var(--white);
+    padding: 15px 0;
+    width: 90%;
+    margin: -10px auto 0;
+    position: relative;
+    z-index: 20;
+
+    .text {
+        text-align: center;
+    }
+}
+
+.job-title {
+    color: #999999;
+    font-family: "YuMincho", sans-serif;
+    text-align: center;
+}
+
+.planner-name {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 0;
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+
+/* --------------------------------結婚式までのステップ */
+.step-inner {
+    margin-bottom: 100px;
+}
+
+.step-container {
+    display: flex;
+    gap: 20px;
+}
+
+.step-content {
+    background-color: var(--white);
+    padding: 15px;
+
+    img {
+        margin-bottom: 10px;
+    }
+}
+
+.step-content-group {
+
+    .step-number {
+        color: var(--white);
+        background-color: var(--navy);
+        width: fit-content;
+        margin: 0 auto 20px;
+        padding: 5px 10px;
+        font-family: "YuMincho", sans-serif;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .step-text {
+        text-align: center;
+        font-family: "YuMincho", sans-serif;
+    }
+}
+
+
+/* --------------------------------喜びの声 */
+.comment-inner {
+    margin-bottom: 100px;
+}
+
+.comment-content,
+.comment-content-column {
+    display: flex;
+    margin-bottom: 50px;
+
+    img {
+        width: 50%;
+    }
+
+
+    p {
+        background-image: url(/images/comment-circle.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        color: #666;
+        font-size: 21px;
+        font-family: "katyoubb", sans-serif;
+        display: grid;
+        place-content: center;
+    }
+}
+
+
+/* --------------------------------よくある質問 */
+.faq-inner {
+    margin-bottom: 100px;
+}
+
+.faq-content {
+    margin-bottom: 50px;
+}
+
+.question {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--navy);
+    border-bottom: 1px solid var(--navy);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.q,
+.q-text,
+.a {
+    font-family: "YuMincho", sans-serif;
+    font-size: 21px;
+}
+
+.answer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+/* --------------------------------CTA */
+.cta {
+    background-image: url(/images/cta-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 430px;
+}
+
+.cta-inner {
+    padding-top: 100px;
+}
+
+.cta-heading {
+    color: var(--white);
+
+    h2 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.cta-btn {
+    text-align: center;
+
+    a {
+        color: var(--white);
+        font-size: 30px;
+        display: inline-block;
+        background: linear-gradient(90deg, #D5B456 0%, #B59222 100%);
+        padding: 10px 50px;
+        border: 2px solid;
+        border-image: linear-gradient(to right, #B59222, #D5B456) 1;
+        border: 1px solid var(--white);
+        border-radius: 5px;
+        transition-duration: .5s;
+        box-shadow: 2px 2px 30px 0px rgba(199, 199, 199, 1);
+        position: relative;
+
+        &::after {
+            content: url(/images/cta-arrow.png);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        &:hover {
+            box-shadow: 1px 1px 0px 0px rgba(199, 199, 199, 1);
+        }
+    }
+}
+
+
+
+/* --------------------------------フッター */
+.footer-inner {
+    padding: 50px 0;
+}
+
+/* フッターロゴ */
+.footer-logo {
+    color: var(--navy);
+    font-size: 60px;
+    width: fit-content;
+    margin: 0 auto 50px;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        display: inline-block;
+        background-color: var(--navy);
+        position: absolute;
+        bottom: 25px;
+        left: calc(50% - 50%);
+    }
+}
+
+.company {
+    margin-bottom: 50px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.footer-sns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    img {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.footer-btn {
+    margin-bottom: 50px;
+
+    a {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, #D5B456 0%, #B59222 100%);
+        padding: 15px 30px;
+        border: 2px solid;
+        border-image: linear-gradient(to right, #B59222, #D5B456) 1;
+        border: 1px solid var(--white);
+        border-radius: 5px;
+        transition-duration: .5s;
+        width: fit-content;
+        margin: 0 auto;
+        color: var(--white);
+        box-shadow: 2px 2px 30px 0px rgba(199, 199, 199, 1);
+
+        &:hover {
+            box-shadow: 1px 1px 0px 0px rgba(199, 199, 199, 1);
+        }
+
+        img {
+            width: 23px;
+            height: 18px;
+        }
+
+        p {
+            font-family: "YuMincho", sans-serif;
+            font-size: 21px;
+        }
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -411,8 +866,11 @@ PC
 SP
 --------------------------------------------------- */
 @media screen and (max-width: 767px) {
-    h2 {
-        font-size: 21px;
+    .heading {
+
+        h2 {
+            font-size: 21px;
+        }
     }
 
     .pc {
@@ -569,6 +1027,214 @@ SP
     .gallery-content {
         gap: 5px;
     }
+
+    /* --------------------------------ウェディングプラン */
+    .plan-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .plan-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .plan-content {
+        width: 100%;
+    }
+
+
+    /* --------------------------------プラン詳細 */
+    .plan-list-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    table {
+
+        tr {
+
+            th {
+                min-width: 70px;
+                padding: 10px 5px;
+            }
+
+            td {
+                background-color: var(--white);
+                padding: 10px;
+            }
+        }
+    }
+
+
+
+    /* --------------------------------プランナー紹介 */
+    .planner-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .planner-container {
+        flex-direction: column;
+    }
+
+    .planner-group {
+        padding: 15px;
+    }
+
+    .planner-name {
+
+        h3 {
+            font-size: 21px;
+        }
+    }
+
+
+
+/* --------------------------------結婚式までのステップ */
+    .step-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .step-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .step-content {
+        background-color: var(--white);
+        padding: 15px;
+
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .step-content-group {
+
+        .step-number {
+            margin: 0 auto 10px;
+        }
+
+        h3 {
+            font-size: 21px;
+        }
+    }
+
+
+
+    /* --------------------------------喜びの声 */
+    .comment-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .comment-content {
+        flex-direction: column;
+
+        img {
+            width: 90%;
+        }
+
+        p {
+            width: 100%;
+            height: 220px;
+            font-size: 16px;
+        }
+    }
+
+    .comment-content-column {
+        flex-direction: column-reverse;
+
+        img {
+            width: 90%;
+        }
+
+        p {
+            width: 100%;
+            height: 220px;
+            font-size: 16px;
+        }
+    }
+
+
+    /* --------------------------------よくある質問 */
+    .faq-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .q,
+    .q-text,
+    .a {
+        font-size: 16px;
+    }
+
+    .answer {
+        align-items: flex-start;
+    }
+
+
+    /* --------------------------------CTA */
+    .cta-inner {
+        padding: 50px 15px 0;
+    }
+
+    .cta-heading {
+        color: var(--white);
+
+        h2 {
+            font-size: 21px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    .cta-btn {
+
+        a {
+
+            &::after {
+                top: 30px;
+            }
+        }
+    }
+
+
+    /* --------------------------------フッター */
+    .footer-inner {
+        padding: 50px 15px 0;
+    }
+
+    .company {
+        margin-bottom: 20px;
+    }
+
+    .footer-sns {
+        margin-bottom: 20px;
+    }
+
+    .footer-btn {
+
+        a {
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
 
 
 }
