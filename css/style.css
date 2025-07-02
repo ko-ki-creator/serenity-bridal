@@ -89,6 +89,7 @@ PC
     background-image: url(/images/mv-back.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 776px;
     margin-bottom: 100px;
@@ -109,7 +110,7 @@ PC
         color: var(--white);
         font-size: clamp(2.813rem, 2.482rem + 1.41vw, 3.75rem);
         position: absolute;
-        top: 2%;
+        top: 20px;
         left: 5%;
 
         &::after {
@@ -287,7 +288,7 @@ PC
 }
 
 .nav-item {
-    width: 48%;
+    width: 52%;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--navy);
@@ -300,12 +301,17 @@ PC
 
         .item-large {
             font-size: 21px;
+            line-height: 1em;
         }
 
         .small {
             font-size: 12px;
         }
     }
+}
+
+.nav-right {
+    width: 45%;
 }
 
 .header-sns {
@@ -353,7 +359,7 @@ PC
 
         p {
             font-family: "YuMincho", sans-serif;
-            font-size: 21px;
+            font-size: 16px;
         }
     }
 }
@@ -376,6 +382,7 @@ PC
     padding: 0 50px;
 
     p {
+        text-align: left;
         margin-bottom: 50px;
     }
 }
@@ -503,6 +510,7 @@ PC
     gap: 15px;
     justify-content: space-between;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .item1 {
@@ -785,8 +793,9 @@ table {
 
     p {
         background-image: url(/images/comment-circle.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: right;
         width: 50%;
         color: #666;
         font-size: 21px;
@@ -836,6 +845,7 @@ table {
     background-image: url(/images/cta-back.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 430px;
 }
@@ -1039,10 +1049,20 @@ SP
 
 
     /* --------------------------------メインビジュアル */
+    .header-wrapper {
+        img {
+            width: 100%;
+            object-position: 27% 100%;
+        }
+
+        h1 {
+            left: 15px;
+        }
+    }
+
     .header-container {
         position: static;
         margin-top: -30px;
-
     }
 
     .catch-copy {
@@ -1186,7 +1206,7 @@ SP
 
     /* --------------------------------ウェディングプラン */
     .plan-inner {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         padding: 0 15px;
     }
 
@@ -1202,7 +1222,7 @@ SP
 
     /* --------------------------------プラン詳細 */
     .plan-list-inner {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         padding: 0 15px;
     }
 
@@ -1226,7 +1246,7 @@ SP
 
     /* --------------------------------プランナー紹介 */
     .planner-inner {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         padding: 0 15px;
     }
 
@@ -1249,7 +1269,7 @@ SP
 
 /* --------------------------------結婚式までのステップ */
     .step-inner {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         padding: 0 15px;
     }
 
@@ -1287,32 +1307,25 @@ SP
         padding: 0 15px;
     }
 
-    .comment-content {
-        flex-direction: column;
-
+    .comment-content,
+    .comment-content-column {
         img {
             width: 90%;
         }
 
         p {
             width: 100%;
-            height: 220px;
+            height: 195px;
             font-size: 16px;
         }
     }
 
+    .comment-content {
+        flex-direction: column;
+    }
+
     .comment-content-column {
         flex-direction: column-reverse;
-
-        img {
-            width: 90%;
-        }
-
-        p {
-            width: 100%;
-            height: 220px;
-            font-size: 16px;
-        }
     }
 
 
