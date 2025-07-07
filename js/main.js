@@ -15,7 +15,7 @@ $(function () {
         $("#js-nav").toggleClass("active");
     });
 
-        $(".menu-nav-link").click(function () {
+        $(".nav-item a").click(function () {
         $("#js-hamburger").removeClass("active");
         $("#js-nav").removeClass("active");
     });

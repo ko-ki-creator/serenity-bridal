@@ -86,7 +86,7 @@ PC
 
 /* --------------------------------メインビジュアル */
 .header {
-    background-image: url(/images/mv-back.png);
+    background-image: url(/images/main-visual/mv-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -173,7 +173,7 @@ PC
         position: relative;
 
         &::after {
-            content: url(/images/cta-arrow.png);
+            content: url(/images/cta/cta-arrow.png);
             position: absolute;
             top: 30px;
             right: 20px;
@@ -402,7 +402,7 @@ PC
         position: relative;
 
         &::after {
-            content: url(/images/about-arrow.png);
+            content: url(/images/about/about-arrow.png);
             position: absolute;
             top: 10px;
             right: -35px;
@@ -792,7 +792,7 @@ table {
 
 
     p {
-        background-image: url(/images/comment-circle.png);
+        background-image: url(/images/comment/comment-circle.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
@@ -842,7 +842,7 @@ table {
 
 /* --------------------------------CTA */
 .cta {
-    background-image: url(/images/cta-back.png);
+    background-image: url(/images/cta/cta-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -888,7 +888,7 @@ table {
         position: relative;
 
         &::after {
-            content: url(/images/cta-arrow.png);
+            content: url(/images/cta/cta-arrow.png);
             position: absolute;
             top: 20px;
             right: 20px;
